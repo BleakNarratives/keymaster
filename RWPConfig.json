@@ -1,0 +1,37 @@
+//
+// RWPConfig.json
+// MetrologyCalibration - Physical Asset Configuration
+//
+
+{
+  "points": [
+    // RWP_01: Bottom-Left corner (Origin)
+    {
+      "id": "RWP_01",
+      "x": 0.000,
+      "y": 0.000,
+      "z": 0.000
+    },
+    // RWP_02: Bottom-Right corner (200 mm on X-axis)
+    {
+      "id": "RWP_02",
+      "x": 0.200,
+      "y": 0.000,
+      "z": 0.000
+    },
+    // RWP_03: Top-Right corner (200 mm on X and Y axes)
+    {
+      "id": "RWP_03",
+      "x": 0.200,
+      "y": 0.200,
+      "z": 0.000
+    },
+    // RWP_04: Top-Left corner (200 mm on Y-axis)
+    {
+      "id": "RWP_04",
+      "x": 0.000,
+      "y": 0.200,
+      "z": 0.000
+    }
+  ]
+}
