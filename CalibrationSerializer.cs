@@ -62,6 +62,16 @@ public static class CalibrationSerializer
     }
 
     /// <summary>
+    /// **NEW HELPER:** Generates the raw JSON string for an existing CalibrationResult.
+    /// Used to pass data context to an AI agent.
+    /// </summary>
+    public static string SerializeToJson(CalibrationResult result)
+    {
+        var options = new JsonSerializerOptions { WriteIndented = false };
+        return JsonSerializer.Serialize(result, options);
+    }
+    
+    /// <summary>
     /// Reconstructs a Matrix4x4 from a CalibrationResult.
     /// </summary>
     public static Matrix4x4 ToMatrix4x4(CalibrationResult result)
